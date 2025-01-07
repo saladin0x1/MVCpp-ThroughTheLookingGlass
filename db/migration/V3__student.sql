@@ -1,0 +1,6 @@
+CREATE TABLE students (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    Name TEXT NOT NULL,
+    FamilyName TEXT NOT NULL,
+    matriculationID VARCHAR(255) NOT NULL UNIQUE
+);

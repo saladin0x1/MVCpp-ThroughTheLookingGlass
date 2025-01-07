@@ -1,11 +1,12 @@
 #include "../include/Model.h"
 
-int Model::getAddTimes()
-{
-	return timesAdd;
+// Add a new student to the list
+void Model::addStudent(const std::string& name, const std::string& familyName, int matriculationID) {
+    Student newStudent = {name, familyName, matriculationID};
+    students.push_back(newStudent);
 }
 
-void Model::addByOne()
-{
-	timesAdd++;
+// Get the list of students
+std::vector<Model::Student> Model::getStudents() const {
+    return students;
 }

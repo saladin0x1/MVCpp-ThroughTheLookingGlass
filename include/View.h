@@ -1,16 +1,14 @@
 #pragma once
-
-#include <iostream>
-
 #include "ViewListener.h"
+#include "Model.h"
+#include <vector>
 
-class View
-{
-	ViewListener* listener;
+class View {
 public:
-	void setListener(ViewListener* listener);
-	void printNumber(int n);
+    void setListener(ViewListener* listener);
+    void printStudents(const std::vector<Model::Student>& students);
+    void run();
 
-	// GUI CODE
-	void run();
+private:
+    ViewListener* listener = nullptr;
 };

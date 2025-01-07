@@ -1,4 +1,0 @@
-/Users/user/very-small-mvc-cpp/build/CMakeFiles/stack.dir
-/Users/user/very-small-mvc-cpp/build/CMakeFiles/run_migrations.dir
-/Users/user/very-small-mvc-cpp/build/CMakeFiles/edit_cache.dir
-/Users/user/very-small-mvc-cpp/build/CMakeFiles/rebuild_cache.dir

@@ -1,7 +1,10 @@
+// include/ViewListener.h
 #pragma once
-class ViewListener
-{
+#include <string> // Include for string parameters
+
+class ViewListener {
 public:
-	virtual void userEnterAdd() = 0;
-	virtual void userEnterAddShow() = 0;
+    virtual void userEnterAddStudent(const std::string& name, const std::string& familyName, int matriculationID) = 0;
+    virtual void userEnterShowStudents() = 0;
+
 };

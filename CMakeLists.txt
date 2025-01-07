@@ -31,4 +31,15 @@ target_link_libraries(stack PRIVATE /usr/local/Cellar/mysql-connector-c++/9.1.0/
 add_custom_target(run_migrations
     COMMAND flyway -configFiles=flyway.conf migrate
     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+    COMMENT "Running Flyway migrations"
 )
+
+# Add a custom command to rebuild the project if necessary
+add_custom_target(rebuild
+    COMMAND ${CMAKE_COMMAND} --build ${CMAKE_BINARY_DIR} --target stack
+    COMMENT "Rebuilding the stack project"
+)
+
+# Add dependencies for the rebuild command to ensure migrations are run first
+add_dependencies(rebuild run_migrations)
+set_target_properties(stack PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)

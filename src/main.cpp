@@ -3,9 +3,9 @@
 #include "../include/Model.h"
 
 int main() {
-	View v;
-	Model m;
-	Controller c(&v, &m);
-	v.setListener(&c);
-	v.run();
+    View View;
+    Model Model;
+    Controller Controller(&View, &Model);
+    View.setListener(&Controller);
+    View.run();
 }
