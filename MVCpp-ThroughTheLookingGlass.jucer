@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="Jg3Lr3" name="MVCpp-ThroughTheLookingGlass" projectType="guiapp"
+              useAppConfig="0" addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1"
+              headerPath="/usr/local/Cellar/soci/4.0.3/include&#10;">
+  <MAINGROUP id="wZMzxV" name="MVCpp-ThroughTheLookingGlass">
+    <GROUP id="{28F4BB5E-1FD7-1CEF-8D92-A8730210F459}" name="Source">
+      <FILE id="dM8qyB" name="Model.cpp" compile="1" resource="0" file="Source/Model.cpp"/>
+      <FILE id="AOII9n" name="Model.h" compile="0" resource="0" file="Source/Model.h"/>
+      <FILE id="G6h93S" name="HomeComponent.cpp" compile="1" resource="0"
+            file="Source/HomeComponent.cpp"/>
+      <FILE id="s4vUxV" name="HomeComponent.h" compile="0" resource="0" file="Source/HomeComponent.h"/>
+      <FILE id="IvVj4V" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="UMaG9X" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="ryEzn0" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" xcodeValidArchs="x86_64" extraLinkerFlags="-L/usr/local/lib -lsoci_core -lsoci_sqlite3&#10;">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" libraryPath="/usr/local/lib&#10;"/>
+        <CONFIGURATION isDebug="0" name="Release" libraryPath="/usr/local/lib&#10;"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../juce"/>
+        <MODULEPATH id="juce_cryptography" path="../../juce"/>
+        <MODULEPATH id="juce_data_structures" path="../../juce"/>
+        <MODULEPATH id="juce_events" path="../../juce"/>
+        <MODULEPATH id="juce_graphics" path="../../juce"/>
+        <MODULEPATH id="juce_gui_basics" path="../../juce"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <XCODE_IPHONE targetFolder="Builds/iOS" extraLinkerFlags="-L/usr/local/lib -lsoci_core -lsoci_sqlite3&#10;&#10;">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" libraryPath="/usr/local/lib&#10;"/>
+        <CONFIGURATION isDebug="0" name="Release" libraryPath="/usr/local/lib&#10;"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="~/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="~/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="~/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="~/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="~/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="~/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_IPHONE>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
